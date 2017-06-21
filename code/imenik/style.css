@@ -1,0 +1,179 @@
+/* Some CSS to make the page prettier; not relevant to RWD */
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+header {
+  background-color: #4caf50;
+  color: #ffffff;
+  padding: 15px;
+
+}
+
+footer {
+  background-color: #4caf50;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+
+
+td{
+  text-align: center;
+}
+
+
+
+
+/*Search bar */
+#search-navigation {
+  display: block;
+  text-decoration: none;
+  margin: 0;
+  text-align: center;
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: #33b5e5;
+  color: #ffffff;
+
+}
+
+#search-navigation:hover {
+  background-color: #0099cc;
+}
+
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+
+#okvir{
+  border: double;
+  width: 300px;
+  height: 300px;
+
+
+}
+
+#okvir-okvirja{
+  display: none;
+}
+
+#okvir1,#okvir2,#okvir3,#okvir4{
+  width: 150px;
+  height: 150px;
+  background-color: #33b5e5;
+  display: inline-block;
+}
+#okvir5{
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+img{
+  display: inline-block;
+}
+img:hover{
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/*RESPONSIVE DESIGN*/
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+
+
+@media only screen and (min-width: 800px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  #okvir-okvirja{
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  /* For tablets: */
+  .col-m-1 {width: 8.33%;}
+  .col-m-2 {width: 16.66%;}
+  .col-m-3 {width: 25%;}
+  .col-m-4 {width: 33.33%;}
+  .col-m-5 {width: 41.66%;}
+  .col-m-6 {width: 50%;}
+  .col-m-7 {width: 58.33%;}
+  .col-m-8 {width: 66.66%;}
+  .col-m-9 {width: 75%;}
+  .col-m-10 {width: 83.33%;}
+  .col-m-11 {width: 91.66%;}
+  .col-m-12 {width: 100%;}
+}
+
+
+/*Imenik tabela */
+#imeniktable{
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+#imeniktable tr.header, #imeniktable tr:hover {
+  background-color: #4caf50;
+}
+
+
+
+.add-window{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  //overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 520px; /* Could be more or less, depending on screen size */
+}
+
+/*Close btn*/
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*------------------------------*/
